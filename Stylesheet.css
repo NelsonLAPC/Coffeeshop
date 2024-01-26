@@ -1,0 +1,114 @@
+/*CSS Style Sheet*/
+
+
+/*change font color*/
+body {color:#ddb095;}
+
+
+/*change font size*/
+p { font-size: 30px; font-family:"Arial"}
+
+
+
+/*change font type*/
+
+h1 {font-size: 50px; color:#f7d8b9; font-family: "Arial"}
+
+h2 h3 h4 h5 h6 {font-family:"Arial"; color:#5e3d33; background-color:#5e3d33}
+
+
+/* change background color*/
+
+body {background-color:#825b4f}
+
+mark {background-color:#5e3d33;
+      color:#f7d8b9}
+a {color:antiquewhite}
+
+/* CSS Style Sheet for Gridded Gallery */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 16px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+    
+    
+/* CSS Style Sheet for Top Navigation Links */
+
+        .top-navigation {;
+                         text-align: center;}
+
+ /* Remove default list styles */
+
+        .top-navigation ul {list-style:none;
+                            padding: 0px;
+                            margin: 10px;
+                            text-align: center}
+
+
+/* Adjust the spacing between navigation items */
+
+        .top-navigation li {display:inline-block;
+                            background: #5e3d33 }
+                         
+
+/* Text color of the links */
+/* Smooth color transition on hover */
+
+        .top-navigation a {text-decoration:none;
+                           color:#f7d8b9;
+                           font-weight:lighter;             
+                           font-size: 20px;
+                           padding: 20px;
+                           transition: color 0.3s ease;
+                           font-family: "Arial";}
+    
+/* Change color on hover */
+
+        .top-navigation a:hover {color: #825b4f;}
+
+
+
+
+
+
+/* CSS Style Sheet */
+
+.right-aligned-title {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

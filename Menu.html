@@ -1,0 +1,119 @@
+ <!doctype html>
+<html>
+<title>Coffee Time</title>
+
+<head> <h1 class="right-aligned-title"> Menu </h1>  
+
+   <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    
+<br><br><br>
+
+   <style>
+        #slider {
+            overflow: hidden;
+            width: 100%;
+            margin: auto;
+        }
+
+        #slider figure {
+            display: flex;
+            flex-direction: column
+        }
+
+        #slider figure img {
+            width: 100%;
+            opacity: 0;
+            transition: opacity 10s ease-in-out;
+            position: absolute
+        }
+
+        #slider figure img.active {
+            opacity: 1;
+        }
+    </style>  
+    
+</head>
+
+<body> 
+ 
+<nav class="top-navigation">
+        
+    <ul>
+    
+            <li><a href="index.html">Home</a></li>
+            <li><a href= "About.html" > About </a></li>
+            <li><a href="Menu.html" > Menu </a></li>
+            <li><a href= "Gallery.html" > Gallery </a></li> 
+     </ul>
+      
+ </nav>      
+ 
+
+<div id="slider">
+    <figure>
+        <img class="active" src="SlideShow/CoffeeShop01.jpg" alt="Image 1">
+        <img src="SlideShow/CoffeeShop2.jpg" alt="Image 2">
+        <img src="SlideShow/CoffeeShop03.jpg" alt="Image 3">
+        <img src="SlideShow/CoffeeShop.jpg" alt="Image 4">
+    </figure>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('#slider figure img');
+
+    function showImage(index) {
+        currentIndex = (index + images.length) % images.length;
+
+        images.forEach((image, i) => {
+            if (i === currentIndex) {
+                image.classList.add('active');
+            } else {
+                image.classList.remove('active');
+            }
+        });
+    }
+
+    function transitionImages() {
+        setInterval(() => {
+            showImage(currentIndex + 1);
+        }, 4000);
+    }
+
+    // Initial call to start the transition
+    transitionImages();
+</script>
+
+   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    
+<h3 Style="font-size: 30px">Flavored Coffee</h3>
+    
+  <ul>
+    
+    <li>Lavender</li>
+    <li>Vanilla</li> 
+    <li>Caramel</li>  
+    <li>Mocha</li>
+    </ul>  
+    
+<h3 style="font-size: 30px">Ice Coffee</h3>
+    
+ <ol type="A" style="font-size: 20px"> 
+    <li>Lavender</li>
+    <li> Vanilla</li>
+    <li>Caramel</li>
+    <li>Mocha</li>
+    
+    
+    
+    
+    </ol>
+    
+    
+    
+    
+    
+    
+  </body>
+    
+    </html>
